@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color:#320838;
+            color: white;
+            padding: 20px;
+        }
+        .sidebar h2{
+            color: white;
+            text-align: center;
+            margin-top: 0%;
+            font-size: 30px;
+        }
+        .sidebar ul{
+            margin-top: 50px;
+    
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #e5e8e8;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .content {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Virtual Study Buddy</h2>
+        <ul>
+            <a href="#" class="nav-link" data-content="dashboard">Dashboard</a>
+            <a href="#" class="nav-link" data-content="task management">Task Management</a>
+            <a href="#" class="nav-link" data-content="reminders">Reminders</a>
+            <a href="#" class="nav-link" data-content="youtube">YouTube Search</a>
+            <a href="#" class="nav-link" data-content="google search">Google Search</a>
+            <a href="#" class="nav-link" data-content="AI Assistant">AI Assistant</a>
+            <a href="#" class="nav-link" data-content="Timer">Timer</a>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="header">Header</div>
+        <div class="content">Content</div>
+    </div>
+</div>
+
+</body>
+</html>

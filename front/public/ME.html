@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical Engineering</title>
+    <script>
+      function searchSubjects() {
+          let input = document.getElementById('search-input').value.toLowerCase();
+          let subjects = document.querySelectorAll('.subject-container');
+
+          subjects.forEach(subject => {
+              let subjectName = subject.querySelector('.subject-name').textContent.toLowerCase();
+              if (subjectName.includes(input)) {
+                  subject.style.display = 'block';
+              } else {
+                  subject.style.display = 'none';
+              }
+          });
+      }
+  </script>
+</head>
+<body>
+  <input type="text" id="search-input" placeholder="Enter your search..." 
+  style="padding: 10px; width: 50%; border-radius: 5px; font-size: 16px;"
+  onkeyup="searchSubjects()">
+  <div class="subject-container">
+<p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">MATHEMATICS-I</p>  
+ <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/5.CSE/4.MATHEMATICS-I/MarchApril-2023.pdf">
+    MarchApril-2023.pdf</a></p>
+ <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/5.CSE/4.MATHEMATICS-I/June-2022.pdf">
+    June-2022.pdf</a></p></div>
+
+    <div class="subject-container">
+<p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">PROGRAMMING FOR PROBLEM SOLVING</p>  
+ <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/3.ME/1.PROGRAMMING%20FOR%20PROBLEM%20SOLVING/MarchApril-2023.pdf">
+    MarchApril-2023.pdf</a></p>
+ <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/3.ME/1.PROGRAMMING%20FOR%20PROBLEM%20SOLVING/June-2022.pdf">
+    June-2022.pdf</a></p></div>
+    <div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">ENGINEERING PHYSICS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/3.ME/2.ENGINEERING%20PHYSICS/MarchApril-2023.pdf">
+       MarchApril-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/3.ME/2.ENGINEERING%20PHYSICS/June-2022.pdf">
+       June-2022.pdf</a></p></div>
+       <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">ENGINEERING GRAPHICS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/3.ME/3.ENGINEERING%20GRAPHICS/MarchApril-2023.pdf">
+       MarchApril-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/3.ME/3.ENGINEERING%20GRAPHICS/SeptemberOctober-2021.pdf">
+        SeptemberOctober-2021.pdf</a></p></div>
+        <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">COMPUTER PROGRAMMING IN C</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/3.ME/5.COMPUTER%20PROGRAMMING%20IN%20C/MarchApril-2023.pdf">
+       MarchApril-2023.pdf</a></p></div>
+   
+       <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">MATHEMATICS-II</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/2.I-II/3.ME/1.MATHEMATICS-II/June-2022.pdf">
+        June-2022.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/2.I-II/3.ME/1.MATHEMATICS-II/SeptemberOctober-2021.pdf">
+        SeptemberOctober-2021.pdf</a></p></div>
+        <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">CHEMISTRY</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/2.I-II/3.ME/2.CHEMISTRY/June-2022.pdf">
+        June-2022.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/2.I-II/3.ME/2.CHEMISTRY/SeptemberOctober-2021.pdf">
+        SeptemberOctober-2021.pdf</a></p></div>
+        <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">ENGINEERING MECHANICS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/2.I-II/3.ME/3.ENGINEERING%20MECHANICS/June-2022.pdf">
+        June-2022.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/2.I-II/3.ME/3.ENGINEERING%20MECHANICS/SeptemberOctober-2021.pdf">
+        SeptemberOctober-2021.pdf</a></p></div>
+        <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">ENGLISH</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/2.I-II/3.ME/4.ENGLISH/June-2022.pdf">
+        June-2022.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/2.I-II/3.ME/4.ENGLISH/SeptemberOctober-2021.pdf">
+        SeptemberOctober-2021.pdf</a></p></div>
+        <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">MATERIAL SCIENCE AND METALLURGY</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/3.II-I/3.ME/1.MATERIAL%20SCIENCE%20AND%20METALLURGY/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>                                          
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/3.II-I/3.ME/1.MATERIAL%20SCIENCE%20AND%20METALLURGY/AugustSeptember-2022.pdf">
+      AugustSeptember-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">MECHANICS OF SOLIDS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/3.II-I/3.ME/2.MECHANICS%20OF%20SOLIDS/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/3.II-I/3.ME/2.MECHANICS%20OF%20SOLIDS/AugustSeptember-2022.pdf">
+      AugustSeptember-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">PRODUCTION TECHNOLOGY</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/3.II-I/3.ME/4.PRODUCTION%20TECHNOLOGY/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/3.II-I/3.ME/4.PRODUCTION%20TECHNOLOGY/AugustSeptember-2022.pdf">
+      AugustSeptember-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">THERMODYNAMICS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/3.II-I/3.ME/5.THERMODYNAMICS/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/3.II-I/3.ME/5.THERMODYNAMICS/AugustSeptember-2022.pdf">
+      AugustSeptember-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">BASIC ELECTRICAL AND ELECTRONICS ENGINEERING</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/3.ME/1.BASIC%20ELECTRICAL%20AND%20ELECTRONICS%20ENGINEERING/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/3.ME/1.BASIC%20ELECTRICAL%20AND%20ELECTRONICS%20ENGINEERING/March-2022.pdf">
+      March-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">FLUID MECHANICS AND HYDRAULIC MACHINES</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/3.ME/2.FLUID%20MECHANICS%20AND%20HYDRAULIC%20MACHINES/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/3.ME/2.FLUID%20MECHANICS%20AND%20HYDRAULIC%20MACHINES/March-2022.pdf">
+      March-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">INSTRUMENTATION AND CONTROL SYSTEMS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/3.ME/3.INSTRUMENTATION%20AND%20CONTROL%20SYSTEMS/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/3.ME/3.INSTRUMENTATION%20AND%20CONTROL%20SYSTEMS/March-2022.pdf">
+      March-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">KINEMATICS OF MACHINERY</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/3.ME/4.KINEMATICS%20OF%20MACHINERY/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/3.ME/4.KINEMATICS%20OF%20MACHINERY/AugustSeptember-2022.pdf">
+      AugustSeptember-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">THERMAL ENGINEERING - I</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/3.ME/5.THERMAL%20ENGINEERING%20-%20I/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/3.ME/5.THERMAL%20ENGINEERING%20-%20I/AugustSeptember-2022.pdf">
+      AugustSeptember-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">BUSINESS ECONOMICS AND FINANCIAL ANALYSIS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/3.ME/1.BUSINESS%20ECONOMICS%20AND%20FINANCIAL%20ANALYSIS/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/3.ME/1.BUSINESS%20ECONOMICS%20AND%20FINANCIAL%20ANALYSIS/August-2022.pdf">
+      August-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">DESIGN OF MACHINE MEMBERS - I</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/3.ME/2.DESIGN%20OF%20MACHINE%20MEMBERS%20-%20I/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/3.ME/2.DESIGN%20OF%20MACHINE%20MEMBERS%20-%20I/August-2022.pdf">
+      August-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">DYNAMICS OF MACHINERY</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/3.ME/3.DYNAMICS%20OF%20MACHINERY/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/3.ME/3.DYNAMICS%20OF%20MACHINERY/August-2022.pdf">
+      August-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">METROLOGY AND MACHINE TOOLS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/3.ME/4.METROLOGY%20AND%20MACHINE%20TOOLS/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/3.ME/4.METROLOGY%20AND%20MACHINE%20TOOLS/August-2022.pdf">
+      August-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">OPERATIONS RESEARCH</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/3.ME/5.OPERATIONS%20RESEARCH/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/3.ME/5.OPERATIONS%20RESEARCH/August-2022.pdf">
+      August-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">THERMAL ENGINEERING - II</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/3.ME/6.THERMAL%20ENGINEERING%20-%20II/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/3.ME/6.THERMAL%20ENGINEERING%20-%20II/August-2022.pdf">
+      August-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">INSTRUMENTATION AND CONTROL SYSTEMS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/3.ME/7.INSTRUMENTATION%20AND%20CONTROL%20SYSTEMS/March-2021.pdf">
+      March-2021.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/3.ME/7.INSTRUMENTATION%20AND%20CONTROL%20SYSTEMS/September-2021.pdf">
+      September-2021.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">THERMAL ENGINEERING</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/3.ME/8.THERMAL%20ENGINEERING/September-2021.pdf">
+      September-2021.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/3.ME/8.THERMAL%20ENGINEERING/March-2021.pdf">
+      March-2021.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">CAD AND CAM</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/1.CAD%20AND%20CAM/February-2023.pdf">
+      February-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/1.CAD%20AND%20CAM/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">DESIGN OF MACHINE MEMBERS - II</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/2.DESIGN%20OF%20MACHINE%20MEMBERS%20-%20II/February-2023.pdf">
+      February-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/2.DESIGN%20OF%20MACHINE%20MEMBERS%20-%20II/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">FINITE ELEMENT METHODS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/3.FINITE%20ELEMENT%20METHODS/February-2023.pdf">
+      February-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/3.FINITE%20ELEMENT%20METHODS/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">HEAT TRANSFER</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/4.HEAT%20TRANSFER/February-2023.pdf">
+      February-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/4.HEAT%20TRANSFER/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">PRODUCTION PLANNING AND CONTROL</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/5.PRODUCTION%20PLANNING%20AND%20CONTROL/February-2023.pdf">
+      February-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/5.PRODUCTION%20PLANNING%20AND%20CONTROL/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">UNCONVENTIONAL MACHINING PROCESSES</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/6.UNCONVENTIONAL%20MACHINING%20PROCESSES/February-2023.pdf">
+      February-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/6.UNCONVENTIONAL%20MACHINING%20PROCESSES/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">ALLOY STEELS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/7.ALLOY%20STEELS/February-2023.pdf">
+      February-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/7.ALLOY%20STEELS/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">DISASTER PREPAREDNESS AND PLANNING MANAGEMENT</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/8.DISASTER%20PREPAREDNESS%20AND%20PLANNING%20MANAGEMENT/February-2023.pdf">
+      February-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/8.DISASTER%20PREPAREDNESS%20AND%20PLANNING%20MANAGEMENT/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">ENTREPRENEURSHIP</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/9.ENTREPRENEURSHIP/February-2023.pdf">
+      February-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/9.ENTREPRENEURSHIP/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">FUNDAMENTALS OF INTERNET OF THINGS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/10.FUNDAMENTALS%20OF%20INTERNET%20OF%20THINGS/February-2023.pdf">
+      February-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/10.FUNDAMENTALS%20OF%20INTERNET%20OF%20THINGS/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">FUNDAMENTALS OF MANAGEMENT FOR ENGINEERS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/11.FUNDAMENTALS%20OF%20MANAGEMENT%20FOR%20ENGINEERS/February-2023.pdf">
+      February-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/11.FUNDAMENTALS%20OF%20MANAGEMENT%20FOR%20ENGINEERS/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">FLUID POWER SYSTEMS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/5.FLUID%20POWER%20SYSTEMS/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/5.FLUID%20POWER%20SYSTEMS/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">INDUSTRIAL MANAGEMENT</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/12.INDUSTRIAL%20MANAGEMENT/February-2023.pdf">
+      February-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/12.INDUSTRIAL%20MANAGEMENT/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">NON-CONVENTIONAL ENERGY SOURCES</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/13.NON-CONVENTIONAL%20ENERGY%20SOURCES/February-2023.pdf">
+      February-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/13.NON-CONVENTIONAL%20ENERGY%20SOURCES/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">RENEWABLE ENERGY SOURCES</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/14.RENEWABLE%20ENERGY%20SOURCES/February-2023.pdf">
+      February-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/3.ME/14.RENEWABLE%20ENERGY%20SOURCES/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">ADDITIVE MANUFACTURING</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/1.ADDITIVE%20MANUFACTURING/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/1.ADDITIVE%20MANUFACTURING/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">AUTOMATION IN MANUFACTURING</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/2.AUTOMATION%20IN%20MANUFACTURING/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/2.AUTOMATION%20IN%20MANUFACTURING/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">AUTOMOBILE ENGINEERING</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/3.AUTOMOBILE%20ENGINEERING/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/3.AUTOMOBILE%20ENGINEERING/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">COMPUTATIONAL FLUID DYNAMICS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/4.COMPUTATIONAL%20FLUID%20DYNAMICS/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/4.COMPUTATIONAL%20FLUID%20DYNAMICS/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">MEMS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/6.MEMS/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/6.MEMS/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">POWER PLANT ENGINEERING</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/7.POWER%20PLANT%20ENGINEERING/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/7.POWER%20PLANT%20ENGINEERING/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">REFRIGERATION AND AIR CONDITIONING</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/8.REFRIGERATION%20AND%20AIR%20CONDITIONING/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/8.REFRIGERATION%20AND%20AIR%20CONDITIONING/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">RENEWABLE ENERGY SOURCES</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/9.RENEWABLE%20ENERGY%20SOURCES/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/9.RENEWABLE%20ENERGY%20SOURCES/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">BASICS OF AERONAUTICAL ENGINEERING</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/10.BASICS%20OF%20AERONAUTICAL%20ENGINEERING/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/10.BASICS%20OF%20AERONAUTICAL%20ENGINEERING/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">TURBO MACHINERY</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/10.TURBO%20MACHINERY/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/10.TURBO%20MACHINERY/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">ELECTRONIC SENSORS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/12.ELECTRONIC%20SENSORS/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/12.ELECTRONIC%20SENSORS/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">ENGINEERING MATERIALS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/13.ENGINEERING%20MATERIALS/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/13.ENGINEERING%20MATERIALS/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">INTELLECTUAL PROPERTY RIGHTS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/14.INTELLECTUAL%20PROPERTY%20RIGHTS/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/14.INTELLECTUAL%20PROPERTY%20RIGHTS/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">MATERIAL HANDLING IN MINES</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/16.MATERIAL%20HANDLING%20IN%20MINES/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/16.MATERIAL%20HANDLING%20IN%20MINES/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p> </div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">NATURAL GAS ENGINEERING</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/17.NATURAL%20GAS%20ENGINEERING/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/17.NATURAL%20GAS%20ENGINEERING/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">PRINCIPLES OF ENTREPRENEURSHIP</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/18.PRINCIPLES%20OF%20ENTREPRENEURSHIP/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/18.PRINCIPLES%20OF%20ENTREPRENEURSHIP/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">REMOTE SENSING AND GIS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/20.REMOTE%20SENSING%20AND%20GIS/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/20.REMOTE%20SENSING%20AND%20GIS/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">SURFACE ENGINEERING</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/21.SURFACE%20ENGINEERING/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/21.SURFACE%20ENGINEERING/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">UTILIZATION OF ELECTRICAL ENERGY</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/22.UTILIZATION%20OF%20ELECTRICAL%20ENERGY/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/22.UTILIZATION%20OF%20ELECTRICAL%20ENERGY/JulyAugust-2022.pdf">
+      JulyAugust-2022.pdf</a></p></div>
+      <div class="subject-container">
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">HEALTH AND SAFETY IN MINES</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/3.ME/23.HEALTH%20AND%20SAFETY%20IN%20MINES/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p></div>
+   
+      
+        
+       
+
+       
+</body>
+</html>

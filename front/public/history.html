@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine with History</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #2195ce;
+            color: white;
+        }
+        input {
+            padding: 10px;
+            width: 50%;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        #youtube-btn {
+            background-color: red;
+            color: white;
+        }
+        #google-btn {
+            background-color: #34a853;
+            color: white;
+        }
+        #results, #history {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            color: black;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .video-container {
+            width: 320px;
+            margin: 10px;
+        }
+        .history-item {
+            background: #ddd;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .history-item:hover {
+            background: #bbb;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Search Engine</h2>
+    <input type="text" id="search-input" placeholder="Enter your search...">
+    <br><br>
+
+    <button id="youtube-btn" onclick="searchYouTube()">Search YouTube</button>
+    <button id="google-btn" onclick="searchGoogle()">Search Google</button>
+
+    <h3>Search History</h3>
+    <div id="history"></div>
+
+    <h3>YouTube Results</h3>
+    <div id="results"></div>
+
+    <script>
+        const YOUTUBE_API_KEY = 'YOUR_YOUTUBE_API_KEY'; // 🔥 Replace with your API Key
+
+        function searchYouTube() {
+            let query = document.getElementById('search-input').value.trim();
+            if (!query) {
+                alert("Please enter a search term!");
+                return;
+            }
+
+            saveToHistory(query); // Save search to history
+
+            let url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=${encodeURIComponent(query)}&type=video&key=${YOUTUBE_API_KEY}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    let resultsDiv = document.getElementById('results');
+                    resultsDiv.innerHTML = ""; // Clear previous results
+
+                    data.items.forEach(item => {
+                        let videoId = item.id.videoId;
+                        let title = item.snippet.title;
+                        let thumbnail = item.snippet.thumbnails.medium.url;
+
+                        let videoContainer = document.createElement('div');
+                        videoContainer.classList.add('video-container');
+                        videoContainer.innerHTML = `
+                            <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">
+                                <img src="${thumbnail}" alt="${title}" style="width: 100%; border-radius: 10px;">
+                            </a>
+                            <p>${title}</p>
+                        `;
+
+                        resultsDiv.appendChild(videoContainer);
+                    });
+                })
+                .catch(error => console.error("Error fetching YouTube data:", error));
+        }
+
+        function searchGoogle() {
+            let query = document.getElementById('search-input').value.trim();
+            if (query) {
+                saveToHistory(query); // Save search to history
+                window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, "_self");
+            } else {
+                alert("Please enter a search term!");
+            }
+        }
+
+        function saveToHistory(query) {
+            let history = JSON.parse(localStorage.getItem("searchHistory")) || [];
+            if (!history.includes(query)) {
+                history.unshift(query); // Add new search at the beginning
+                if (history.length > 10) history.pop(); // Keep only the latest 10 searches
+                localStorage.setItem("searchHistory", JSON.stringify(history));
+            }
+            displayHistory();
+        }
+
+        function displayHistory() {
+            let history = JSON.parse(localStorage.getItem("searchHistory")) || [];
+            let historyDiv = document.getElementById("history");
+            historyDiv.innerHTML = ""; // Clear previous history
+
+            history.forEach(item => {
+                let historyItem = document.createElement("div");
+                historyItem.classList.add("history-item");
+                historyItem.textContent = item;
+                historyItem.onclick = function () {
+                    document.getElementById("search-input").value = item;
+                    searchYouTube(); // Perform search when clicked
+                };
+                historyDiv.appendChild(historyItem);
+            });
+        }
+
+        // Load history on page load
+        window.onload = displayHistory;
+    </script>
+
+</body>
+</html>
