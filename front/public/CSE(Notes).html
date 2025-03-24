@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE-Notes</title>
+    <script>
+        function searchSubjects() {
+            let input = document.getElementById('search-input').value.toLowerCase();
+            let subjects = document.querySelectorAll('.subject-container');
+  
+            subjects.forEach(subject => {
+                let subjectName = subject.querySelector('.subject-name').textContent.toLowerCase();
+                if (subjectName.includes(input)) {
+                    subject.style.display = 'block';
+                } else {
+                    subject.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="search-input" placeholder="Enter your search..." 
+    style="padding: 10px; width: 50%; border-radius: 5px; font-size: 16px;"
+    onkeyup="searchSubjects()"> 
+<div class="subject-container">
+        <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">matrices and calculus
+            <a style="padding-left:2%;"href="https://books.google.co.in/books?id=iPvAEAAAQBAJ&pg=PA131&source=gbs_selected_pages&cad=1#v=onepage&q&f=true">
+               Link
+            </a>
+        </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Engineering Chemistry
+        <a style="padding-left:2%;"href="https://books.google.co.in/books?id=KHscEAAAQBAJ&printsec=frontcover&redir_esc=y#v=onepage&q&f=true">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Programming for Problem Solving
+        <a style="padding-left:2%;"href="https://books.google.co.in/books?id=99_rEAAAQBAJ&pg=PA14&source=gbs_selected_pages&cad=1#v=onepage&q&f=true">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Basic Electrical Engineering 
+        <a style="padding-left:2%;"href="https://books.google.co.in/books?id=bqnmDwAAQBAJ&printsec=copyright&redir_esc=y#v=onepage&q&f=true">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Computer Aided Engineering Graphics
+        <a style="padding-left:2%;"href="http://ndl.ethernet.edu.et/bitstream/123456789/87814/3/Computer%20Aided%20Engineering%20Design%20-%20Saxena%2C%20Sahay%20%28Springer%29.pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">ordinary differential equations and vector calculus
+        <a style="padding-left:2%;"href="https://books.google.co.in/books?id=hqnmDwAAQBAJ&pg=PA19&source=gbs_selected_pages&cad=1#v=onepage&q&f=true">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Applied Physics
+        <a style="padding-left:2%;"href="https://books.google.co.in/books?id=ZNjfeEvG4oMC&printsec=frontcover&redir_esc=y#v=onepage&q&f=true">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">English for Skill Enhancement
+        <a style="padding-left:2%;"href="https://mrcet.com/downloads/digital_notes/HS/R24/English%20for%20Skill%20Enhancement.pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Electronic Devices and Circuits
+        <a style="padding-left:2%;"href="https://docs.google.com/file/d/0B21HoBq6u9TsYURmMHMwZktEbDA/edit?resourcekey=0-M_Zyo0FOZq7JkB-s91R2Gw">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Digital Electronics
+        <a style="padding-left:2%;"href="https://www.vssut.ac.in/lecture_notes/lecture1626342617.pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Data Structures 
+        <a style="padding-left:2%;"href="https://mrcet.com/downloads/digital_notes/IT/IT_R22_DATA%20STRUCTURES%20DIGITAL-NOTES.pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Computer Oriented Statistical Methods
+        <a style="padding-left:2%;"href="https://books.google.co.in/books?id=Wcc2EAAAQBAJ&pg=PA121&source=gbs_selected_pages&cad=1#v=onepage&q&f=true">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Computer Organization and Architecture
+        <a style="padding-left:2%;"href="https://mrcet.com/downloads/digital_notes/CSE/II%20Year/CS/R22_II_I_COMPUTER%20ORGANIZATION%20AND%20ARCHITECTURE.pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Object Oriented Programming through Java
+        <a style="padding-left:2%;"href="https://mrcet.com/downloads/digital_notes/IT/IT_(R22)_2-2_OOP%20THROUGH%20JAVA_DIGITAL%20NOTES_(2023-24).pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Discrete Mathematics
+        <a style="padding-left:2%;"href="https://mrcet.com/downloads/digital_notes/CSE/Mtech/I%20Year/MFCS.pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Business Economics & Financial Analysis
+        <a style="padding-left:2%;"href="https://mrcet.com/downloads/digital_notes/EEE/09072024/BUSINESS%20ECONOMICS%20AND%20FINANCIAL%20ANALYSIS%20DIITAL%20NOTES.pdf">
+           Link
+        </a>
+    </p> 
+</div> 
+<div class="subject-container">
+        <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Operating Systems
+            <a style="padding-left:2%;"href="https://mrcet.com/downloads/digital_notes/IT/IT_(R22)_2-2_OPERATING%20SYSTEMS_DIGITAL%20NOTES_(2023-24).pdf">
+               Link
+            </a>
+        </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Database Management Systems
+        <a style="padding-left:2%;"href="https://mrcet.com/downloads/digital_notes/IT/IT_R22_DATABASE%20MANAGEMENT%20SYSTEMS%20DIGITAL-NOTES.pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Software Engineering 
+        <a style="padding-left:2%;"href="https://mrcet.com/downloads/digital_notes/IT/CSIT_(R22)_2-2_SOFTWARE%20ENGINEERING_DIGITAL%20NOTES_(2023-24).pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Design and Analysis of Algorithms
+        <a style="padding-left:2%;"href="https://mrcet.com/downloads/digital_notes/CSE/II%20Year/DAA(R22A0506).pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Computer Networks
+        <a style="padding-left:2%;"href="https://mrcet.com/downloads/digital_notes/IT/CSIT_(R22)_2-2_COMPUTER%20NETWORKS_DIGITAL%20NOTES%20(2023-24).pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Machine Learning
+        <a style="padding-left:2%;"href="https://mrcet.com/downloads/digital_notes/CSE/III%20Year/CSIT_(R22)_3-2_MACHINE%20LEARNING_DIGITAL%20NOTES.pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Formal Languages and Automata Theory
+        <a style="padding-left:2%;"href="https://mrcet.com/downloads/digital_notes/CSE/II%20Year/FORMAL%20LANGUAGES%20AND%20AUTOMATA%20THEORY%20(%20R22A0510%20).pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Artificial Intelligence
+        <a style="padding-left:2%;"href="https://mrcet.com/downloads/digital_notes/IT/IT_(R22)_3-1_ARTIFICIAL%20INTELLIGENCE_DIGITAL%20NOTES.pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Cryptography and Network Security
+        <a style="padding-left:2%;"href="https://www.vssut.ac.in/lecture_notes/lecture1428550736.pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Compiler Design
+        <a style="padding-left:2%;"href="https://mrcet.com/downloads/digital_notes/CSE/III%20Year/COMPILER%20DESIGN(R22A0511).pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Organizational Behavior
+        <a style="padding-left:2%;"href="https://drive.google.com/file/d/152aiCvDU2gpJWk0CFvWdCBYvWrMSTOxW/view">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Quantum Computing
+        <a style="padding-left:2%;"href="https://homepages.cwi.nl/~rdewolf/qcnotes.pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">Advanced Computer Architecture
+        <a style="padding-left:2%;"href="https://abit.edu.in/wp-content/uploads/2022/07/advanced-computer-architecture.pdf">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<var><div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<var><div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+<div class="subject-container">
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;color:var(--secondaryBackground);">
+        <a style="padding-left:2%;"href="">
+           Link
+        </a>
+    </p>  
+</div>
+</var></var>
+
+</body>
+</html>

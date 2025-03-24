@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cse(DS)</title>
+    <script>
+      function searchSubjects() {
+          let input = document.getElementById('search-input').value.toLowerCase();
+          let subjects = document.querySelectorAll('.subject-container');
+
+          subjects.forEach(subject => {
+              let subjectName = subject.querySelector('.subject-name').textContent.toLowerCase();
+              if (subjectName.includes(input)) {
+                  subject.style.display = 'block';
+              } else {
+                  subject.style.display = 'none';
+              }
+          });
+      }
+  </script>
+</head>
+<body>
+  <input type="text" id="search-input" placeholder="Enter your search..." 
+  style="padding: 10px; width: 50%; border-radius: 5px; font-size: 16px;"
+  onkeyup="searchSubjects()">  
+
+  <div class="subject-container"> 
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">MATHEMATICS-I</p>  
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/5.CSE/4.MATHEMATICS-I/MarchApril-2023.pdf">
+      MarchApril-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/5.CSE/4.MATHEMATICS-I/June-2022.pdf">
+      June-2022.pdf</a></p></div>
+      <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">ENGLISH</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/5.CSE/3.ENGLISH/MarchApril-2023.pdf">
+      MarchApril-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/5.CSE/3.ENGLISH/June-2022.pdf">
+      June-2022.pdf</a></p></div>
+      <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">BASIC ELECTRICAL ENGINEERING</p>  
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/5.CSE/2.BASIC%20ELECTRICAL%20ENGINEERING/MarchApril-2023.pdf">
+     MarchApril-2023.pdf</a></p>
+     <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/5.CSE/2.BASIC%20ELECTRICAL%20ENGINEERING/June-2022.pdf">
+     June-2022.pdf</a></p></div>
+     <div class="subject-container"> 
+     <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">CHEMISTRY</p>  
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/5.CSE/1.CHEMISTRY/MarchApril-2023.pdf">
+     MarchApril-2023.pdf</a></p>
+     <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/1.I-I/5.CSE/1.CHEMISTRY/June-2022.pdf">
+     June-2022.pdf</a></p></div>
+     <div class="subject-container"> 
+     <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">MATHEMATICS-II</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/2.I-II/5.CSE/3.MATHEMATICS-II/June-2022.pdf">
+      June-2022.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/2.I-II/5.CSE/3.MATHEMATICS-II/SeptemberOctober-2021.pdf">
+      SeptemberOctober-2021.pdf</a></p></div>
+      <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">PROGRAMMING FOR PROBLEM SOLVING</p>  
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/2.I-II/5.CSE/5.PROGRAMMING%20FOR%20PROBLEM%20SOLVING/June-2022.pdf">
+     June-2022.pdf</a></p>
+     <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/2.I-II/5.CSE/5.PROGRAMMING%20FOR%20PROBLEM%20SOLVING/SeptemberOctober-2021.pdf">
+     SeptemberOctober-2021.pdf</a></p></div>
+     <div class="subject-container"> 
+     <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">ENGINEERING GRAPHICS</p>  
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/2.I-II/5.CSE/6.ENGINEERING%20GRAPHICS/June-2022.pdf">
+     June-2022.pdf</a></p>
+     <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/2.I-II/5.CSE/6.ENGINEERING%20GRAPHICS/SeptemberOctober-2021.pdf">
+     SeptemberOctober-2021.pdf</a></p></div>
+     <div class="subject-container"> 
+     <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">APPLIED PHYSICS</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/2.I-II/5.CSE/4.APPLIED%20PHYSICS/June-2022.pdf">
+      June-2022.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/2.I-II/5.CSE/4.APPLIED%20PHYSICS/SeptemberOctober-2021.pdf">
+      SeptemberOctober-2021.pdf</a></p></div>
+      <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">BUSINESS ECONOMICS AND FINANCIAL ANALYSIS</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/5.CSE/1.BUSINESS%20ECONOMICS%20AND%20FINANCIAL%20ANALYSIS/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/5.CSE/1.BUSINESS%20ECONOMICS%20AND%20FINANCIAL%20ANALYSIS/AugustSeptember-2021.pdf">
+      AugustSeptember-2022.pdf</a></p></div>
+      <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">COMPUTER ORIENTED STATISTICAL METHODS</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/3.II-I/5.CSE/3.COMPUTER%20ORIENTED%20STATISTICAL%20METHODS/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/3.II-I/5.CSE/3.COMPUTER%20ORIENTED%20STATISTICAL%20METHODS/AugustSeptember-2022.pdf">
+      AugustSeptember-2022.pdf</a></p></div>
+      <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">DATA STRUCTURES</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/3.II-I/5.CSE/4.DATA%20STRUCTURES/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/3.II-I/5.CSE/4.DATA%20STRUCTURES/AugustSeptember-2022.pdf">
+      AugustSeptember-2022.pdf</a></p></div>
+      <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">DISCRETE MATHEMATICS</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/5.CSE/3.DISCRETE%20MATHEMATICS/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/5.CSE/3.DISCRETE%20MATHEMATICS/AugustSeptember-2022.pdf">
+      AugustSeptember-2022.pdf</a></p></div>
+      <div class="subject-container"> 
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">PYTHON PROGRAMMING</p>  
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/3.II-I/21.CSE(DS)/4.PYTHON%20PROGRAMMING/AprilMay-2023.pdf">
+        AprilMay-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/3.II-I/21.CSE(DS)/4.PYTHON%20PROGRAMMING/AugustSeptember-2022.pdf">
+        AugustSeptember-2022.pdf </a></p></div>
+
+        <div class="subject-container"> 
+    <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">MATHEMATICAL AND STATISTICAL FOUNDATIONS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/3.II-I/21.CSE(DS)/6.MATHEMATICAL%20AND%20STATISTICAL%20FOUNDATIONS/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/3.II-I/21.CSE(DS)/6.MATHEMATICAL%20AND%20STATISTICAL%20FOUNDATIONS/AugustSeptember-2022.pdf">
+      AugustSeptember-2022.pdf </a></p></div>
+      <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">DATABASE MANAGEMENT SYSTEMS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/20.CSE(DS)/1.DATABASE%20MANAGEMENT%20SYSTEMS/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/20.CSE(DS)/1.DATABASE%20MANAGEMENT%20SYSTEMS/AugustSeptember-2022.pdf">
+      AugustSeptember-2022.pdf </a></p></div>
+      <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">SOFTWARE ENGINEERING</p>  
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/5.CSE/13.SOFTWARE%20ENGINEERING/JanuaryFebruary-2023.pdf">
+       JanuaryFebruary-2023.pdf</a></p>
+     <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/5.CSE/13.SOFTWARE%20ENGINEERING/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">FORMAL LANGUAGES AND AUTOMATA THEORY</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/5.CSE/7.FORMAL%20LANGUAGES%20AND%20AUTOMATA%20THEORY/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/5.CSE/7.FORMAL%20LANGUAGES%20AND%20AUTOMATA%20THEORY/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">OPERATING SYSTEMS</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/5.CSE/5.OPERATING%20SYSTEMS/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/5.CSE/5.OPERATING%20SYSTEMS/AugustSeptember-2022.pdf">
+      AugustSeptember-2022.pdf</a></p></div>
+      <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">JAVA PROGRAMMING</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/5.CSE/4.JAVA%20PROGRAMMING/AprilMay-2023.pdf">
+      AprilMay-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/4.II-II/5.CSE/4.JAVA%20PROGRAMMING/AugustSeptember-2022.pdf">
+      AugustSeptember-2022.pdf</a></p></div>
+      <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">COMPUTER GRAPHICS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/19.CSE(DS)/1.COMPUTER%20GRAPHICS/JanuaryFebruary-2023.pdf">
+        JanuaryFebruary-2023.pdf</a></p></div>
+        <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">INFORMATION RETRIEVAL SYSTEMS</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/19.CSE(DS)/2.INFORMATION%20RETRIEVAL%20SYSTEMS/JanuaryFebruary-2023.pdf">
+        JanuaryFebruary-2023.pdf</a></p></div>
+    
+        <div class="subject-container"> 
+        <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">DEVOPS</p>  
+        <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/19.CSE(DS)/3.DEVOPS/JanuaryFebruary-2023.pdf">
+          JanuaryFebruary-2023.pdf</a></p></div>
+          <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">SOFTWARE PROJECT MANAGEMENT</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/19.CSE(DS)/4.SOFTWARE%20PROJECT%20MANAGEMENT/JanuaryFebruary-2023.pdf">
+        JanuaryFebruary-2023.pdf</a></p></div>
+        <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">IMAGE PROCESSING</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/19.CSE(DS)/5.IMAGE%20PROCESSING/JanuaryFebruary-2023.pdf">
+        JanuaryFebruary-2023.pdf</a></p></div>
+        <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">WEB PROGRAMMING</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/19.CSE(DS)/6.WEB%20PROGRAMMING/JanuaryFebruary-2023.pdf">
+        JanuaryFebruary-2023.pdf</a></p></div>
+        <div class="subject-container"> 
+        <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">ARTIFICIAL INTELLIGENCE</p>  
+        <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/5.CSE/3.ARTIFICIAL%20INTELLIGENCE/JanuaryFebruary-2023.pdf">
+         JanuaryFebruary-2023.pdf</a></p>
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/5.CSE/3.ARTIFICIAL%20INTELLIGENCE/JulyAugust-2022.pdf">
+         JulyAugust-2022.pdf</a></p></div>
+         <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">DATA WAREHOUSING AND BUSINESS INTELLIGENCE</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/19.CSE(DS)/8.DATA%20WAREHOUSING%20AND%20BUSINESS%20INTELLIGENCE/JanuaryFebruary-2023.pdf">
+        JanuaryFebruary-2023.pdf</a></p></div>
+        <div class="subject-container"> 
+        <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">DESIGN AND ANALYSIS OF ALGORITHMS</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/5.CSE/3.DESIGN%20AND%20ANALYSIS%20OF%20ALGORITHMS/February-2023.pdf">
+        February-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/5.CSE/3.DESIGN%20AND%20ANALYSIS%20OF%20ALGORITHMS/AugustSeptember-2021.pdf">
+      AugustSeptember-2022.pdf</a></p></div>
+      <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">COMPUTER NETWORKS</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/5.CSE/4.COMPUTER%20NETWORKS/JanuaryFebruary-2023.pdf">
+      JanuaryFebruary-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/5.CSE/4.COMPUTER%20NETWORKS/FebruaryMarch-2022.pdf">
+      FebruaryMarch-2022.pdf</a></p></div>
+      <div class="subject-container"> 
+      <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:20px;">INTRODUCTION TO DATA SCIENCE</p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/5.III-I/19.CSE(DS)/11.INTRODUCTION%20TO%20DATA%20SCIENCE/JanuaryFebruary-2023.pdf">
+        JanuaryFebruary-2023.pdf</a></p></div>
+        <div class="subject-container"> 
+        <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">SCRIPTING LANGUAGES</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/5.CSE/7.SCRIPTING%20LANGUAGES/February-2023.pdf">
+        February-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/5.CSE/7.SCRIPTING%20LANGUAGES/FebruaryMarch-2022.pdf">
+        FebruaryMarch-2022.pdf</a></p></div>
+        <div class="subject-container"> 
+       <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">FUNDAMENTALS OF INTERNET OF THINGS</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/5.CSE/11.FUNDAMENTALS%20OF%20INTERNET%20OF%20THINGS/February-2023.pdf">
+        February-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/5.CSE/11.FUNDAMENTALS%20OF%20INTERNET%20OF%20THINGS/FebruaryMarch-2022.pdf">
+        FebruaryMarch-2022.pdf</a></p></div>
+        <div class="subject-container"> 
+        <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">CONCURRENT PROGRAMMING</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/5.CSE/2.CONCURRENT%20PROGRAMMING/AugustSeptember-2021.pdf">
+        AugustSeptember-2021.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/5.CSE/2.CONCURRENT%20PROGRAMMING/FebruaryMarch-2022.pdf">
+        FebruaryMarch-2022.pdf</a></p></div>
+        <div class="subject-container"> 
+        <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">MOBILE APPLICATION DEVELOPMENT</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/5.CSE/5.MOBILE%20APPLICATION%20DEVELOPMENT/February-2023.pdf">
+        February-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/6.III-II/5.CSE/5.MOBILE%20APPLICATION%20DEVELOPMENT/FebruaryMarch-2022.pdf">
+        FebruaryMarch-2022.pdf</a></p></div>
+        <div class="subject-container"> 
+        <p class="subject-name" style="font-size:20px;padding-left:100px;padding-top:10px;">AD-HOC AND SENSOR NETWORKS</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/5.CSE/1.AD-HOC%20AND%20SENSOR%20NETWORKS/JanuaryFebruary-2023.pdf">
+        February-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/5.CSE/1.AD-HOC%20AND%20SENSOR%20NETWORKS/JulyAugust-2022.pdf">
+        JulyAugust-2022.pdf</a></p></div>
+
+        <div class="subject-container"> 
+        <p class="subject-name"style="font-size:20px;padding-left:100px;padding-top:10px;">ADVANCED ALGORITHMS</p>  
+       <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/5.CSE/2.ADVANCED%20ALGORITHMS/JanuaryFebruary-2023.pdf">
+        JanuaryFebruary-2023.pdf</a></p>
+      <p style="padding-left:150px;padding-top:10px;"><a href="https://studentservices.jntuh.ac.in/oss/resources/files/previousQPapers/1.Btech/1.R18/7.IV-I/5.CSE/2.ADVANCED%20ALGORITHMS/JulyAugust-2022.pdf">
+        JulyAugust-2022.pdf</a></p></div>
+
+        <div class="subject-container"> 
+      
+      <p class="subject-name"style="font-size:20px;padding-left:100px;padding-top:20px;"></p>  
+    <p style="padding-left:150px;padding-top:10px;"><a href="">
+      AprilMay-2023.pdf</a></p>
+    <p style="padding-left:150px;padding-top:10px;"><a href="">
+      AugustSeptember-2022.pdf </a></p></div>
+
+</body>
+</html>
