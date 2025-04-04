@@ -74,24 +74,23 @@ def register():
 @app.route('/login', methods=['POST'])
 def login():
     try:
-        data = request.json
+        data = request.get_json()
         email = data.get("email")
         password = data.get("password")
 
-        # Find user in database
         user = User.query.filter_by(email=email).first()
 
-        # Check password
         if user and bcrypt.check_password_hash(user.password, password):
-            return jsonify({"message": "Login successful!"}), 200
-
-        return jsonify({"message": "Invalid email or password!"}), 401
+            return jsonify({"success": True})  # ✅ Only return "success", no message
+        else:
+            return jsonify({"success": False}), 401  # ❌ No alert-triggering message
 
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        print("Error:", str(e))  # ✅ Log error instead of returning a message
+        return jsonify({"success": False}), 500  # ❌ No message in response
 
     finally:
-        db.session.close()  # Ensure the session is closed
+        db.session.close()
 
 # Run the app
 if __name__ == "__main__":
