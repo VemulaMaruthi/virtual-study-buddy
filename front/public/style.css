@@ -52,9 +52,7 @@ body {
   .nav-link:hover {
     background-color: #555;
 }
-.content-area{
-  background-color: black;
-}
+
 /* Active link styles */
 .nav-link.active {
     background-color: #f4f4f4;

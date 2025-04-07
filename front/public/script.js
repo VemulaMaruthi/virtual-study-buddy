@@ -61,27 +61,19 @@ document.addEventListener('DOMContentLoaded', function() {
     display: block; /* Prevents inline spacing issues */
     margin: 20px auto; /* Centers the image horizontally */
     border-radius: 10px;  box-shadow: 10px 10px 20px black; /* Red shadow */">
-    <p style="color:black; padding-top:50px; font-family:Caveat;">The expert in anything was once a beginner</p>
+    <p style="color:black; padding-top:50px; font-family:Caveat;"><em>The expert in anything was once a beginner</em></p>
     </div>
     `;
-}function handleLogout() {
-    localStorage.removeItem("isLoggedIn"); // Remove login status
-    window.location.href = "login.html"; // Redirect to login page
-
-    // Prevent going back to dashboard using the browser back button
-    setTimeout(() => {
-        window.history.pushState(null, null, window.location.href);
-    }, 0);
 }
-
-// Check login status when the page loads
 document.addEventListener("DOMContentLoaded", function () {
     if (localStorage.getItem("isLoggedIn") === "true") {
-        loadDashboard(); // Load dashboard if logged in
-    } else {
-        window.location.href = "login.html"; // Redirect to login if not logged in
+        loadDashboard(); // ✅ Load dashboard immediately if logged in
     }
 });
+function handleLogout() {
+    localStorage.removeItem("isLoggedIn"); // ✅ Remove login status
+    location.reload(); // ✅ Reload the page to show the login form
+}
 
 
 
